@@ -5,25 +5,33 @@ FONTES
 */
 
 @font-face {
-  font-family: '';
+  font-family: 'poppins_regular';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('') format('woff');
+  src: url('../../fonts/poppins-regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: '';
+  font-family: 'clarika_geo_extrabold';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('') format('woff');
+  src: url('../../fonts/clarika-geo-extrabold.woff') format('woff');
 }
 
 @font-face {
-  font-family: '';
+  font-family: 'clarika_geo_ultrablack';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('') format('woff');
+  src: url('../../fonts/clarika-geo-ultrablack.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'billy_ohio';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../fonts/billy-ohio.woff') format('woff');
 }
