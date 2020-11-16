@@ -32,13 +32,42 @@ body.carregando {
   max-width: 250px;
 }
 
+.loading_svg_bolinha {
+  fill: white;
+  animation: loading 3s infinite;
+  animation-delay: 1.2s;
+}
+
+.loading_svg_f {
+  fill: white;
+  animation: loading 3s infinite;
+  animation-delay: 0.3s;
+}
+
+.loading_svg_d {
+  fill: white;
+  animation: loading 3s infinite;
+  animation-delay: 0.6s;
+}
+
+.loading_svg_i {
+  fill: white;
+  animation: loading 3s infinite;
+  animation-delay: 0.9s;
+}
+
 @keyframes loading {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  70% {opacity: 0;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 500px) {
   .loading svg {
-    max-width: 200px;
+    max-width: 150px;
   }
 }

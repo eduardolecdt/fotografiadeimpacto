@@ -8,7 +8,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
   height: 50px;
   width: 100%;
@@ -20,16 +20,10 @@ nav {
 
 /* Logo */
 
-nav .logo {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin-right: auto;
-}
-
-nav .logo img {
+nav img.logo {
   width: 100%;
-  max-width: 100px;
+  max-width: 30px;
+  margin-right: auto;
 }
 
 /* Opcoes */
@@ -41,18 +35,20 @@ nav .opcoes {
 }
 
 nav .opcoes a {
-  font-family: var(--fonte-medium);
+  font-family: var(--fonte-extrabold);
   font-size: 0.9rem;
   color: var(--cor-branco);
   margin-left: 40px;
 }
 
 nav .opcoes a.destaque {
-  color: var(--cor-primaria-1);
+  color: var(--cor-preto);
+  background-color: var(--cor-branco);
+  padding: 5px 15px;
 }
 
 nav .opcoes a:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 /* Responsivo */

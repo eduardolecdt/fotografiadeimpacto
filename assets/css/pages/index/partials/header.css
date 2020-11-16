@@ -10,7 +10,96 @@ header {
   justify-content: center;
 }
 
+/* Titulo */
+
+header .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../../../images/pages/index/background-1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 0px 50px 0px 0px;
+}
+
+header .titulo h3 {
+  font-family: var(--fonte-estilo);
+  color: var(--cor-branco);
+  font-size: 3rem;
+  line-height: 1;
+  max-width: 450px;
+}
+
+header .titulo h2 {
+  font-family: var(--fonte-black);
+  color: var(--cor-branco);
+  font-size: 2rem;
+  line-height: 1;
+  max-width: 650px;
+  text-transform: uppercase;
+  padding: 20px 0px 30px 0px;
+}
+
+header .titulo button {
+  font-family: var(--fonte-extrabold);
+  background-color: var(--cor-preto);
+  color: var(--cor-branco);
+  border: 3px solid var(--cor-branco);
+  font-size: 1.1rem;
+  padding: 10px 20px;
+}
+
+header .titulo button:hover {
+  background-color: var(--cor-branco);
+  color: var(--cor-preto);
+}
+
+/* Imagem */
+
+header .imagem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+header .imagem img {
+  height: 100vh;
+}
+
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column-reverse;
+  }
+  header .titulo {
+    width: 100%;
+    height: 100%;
+    padding: 130px 30px 50px 30px;
+  }
+  header .imagem {
+    width: 100%;
+  }
+  header .imagem img {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header .titulo h3 {
+    font-size: 1.5rem;
+  }
+  header .titulo h2 {
+    font-size: 1.4rem;
+    max-width: 600px;
+  }
+  header .titulo button {
+    font-size: 1rem;
+  }
 }
