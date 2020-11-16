@@ -8,7 +8,7 @@ INDEX partials LOADING
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--cor-secundaria-1);
+  background-color: var(--cor-preto);
   position: fixed;
   top: 0;
   width: 100%;
@@ -32,72 +32,7 @@ body.carregando {
   max-width: 250px;
 }
 
-.svg_w {
-  fill: #d49f11;
-  animation: loading 10s linear infinite;
-  animation-delay: 0.1s;
-}
-
-.svg_i {
-  fill: #d49f11;
-  animation: loading 10s linear infinite;
-  animation-delay: 0.2s;
-}
-
-.svg_z {
-  fill: #d49f11;
-  animation: loading 10s linear infinite;
-  animation-delay: 0.3s;
-}
-
-.svg_o1 {
-  fill: #d49f11;
-  animation: loading 10s linear infinite;
-  animation-delay: 0.4s;
-}
-
-.svg_o2 {
-  fill: #d49f11;
-  animation: loading 10s linear infinite;
-  animation-delay: 0.5s;
-}
-
-.svg_m {
-  fill: #d49f11;
-  animation: loading 10s linear infinite;
-  animation-delay: 0.6s;
-}
-
 @keyframes loading {
-  0% {
-    opacity: 0;
-    fill: #d49f11;
-  }
-  15% {
-    opacity: 1;
-    fill: #d49f11;
-  }
-  20% {
-    fill: #ffffff;
-  }
-  25% {
-    fill: #d49f11;
-    opacity: 0.5;
-  }
-  35% {
-    opacity: 1;
-    fill: #d49f11;
-  }
-  50% {
-    fill: #ffffff;
-  }
-  65% {
-    fill: #d49f11;
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* Responsivo */
