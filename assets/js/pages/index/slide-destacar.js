@@ -11,7 +11,7 @@ __buttonAvancar.addEventListener('click', () => {
 
   __indice++
 
-  const porcentagem = 320 * (__indice - 1)
+  const porcentagem = 704 * (__indice - 1)
   __divConteudo.style.transform = `translateX(-${porcentagem}px)`
 })
 
@@ -21,6 +21,6 @@ __buttonVoltar.addEventListener('click', () => {
 
   __indice--
 
-  const porcentagem = 320 * (__indice - 1)
+  const porcentagem = 704 * (__indice - 1)
   __divConteudo.style.transform = `translateX(-${porcentagem}px)`
 })

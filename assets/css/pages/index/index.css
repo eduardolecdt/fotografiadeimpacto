@@ -16,4 +16,6 @@ INDEX
 @import './partials/header.css';
 @import './partials/section-destacar.css';
 @import './partials/section-conteudo.css';
+@import './partials/section-aulas.css';
+@import './partials/section-autor.css';
 

@@ -33,6 +33,7 @@ header .titulo h3 {
   font-size: 3rem;
   line-height: 1;
   max-width: 450px;
+  cursor: default;
 }
 
 header .titulo h2 {
@@ -43,6 +44,7 @@ header .titulo h2 {
   max-width: 650px;
   text-transform: uppercase;
   padding: 20px 0px 30px 0px;
+  cursor: default;
 }
 
 header .titulo button {
