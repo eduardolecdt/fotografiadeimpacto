@@ -25,6 +25,11 @@ section.depoimentos .cliente {
   width: 100%;
   max-width: 900px;
   position: relative;
+  margin-top: 100px;
+}
+
+section.depoimentos .cliente:nth-child(1) {
+  margin-top: 0px;
 }
 
 section.depoimentos .cliente:nth-child(1),
@@ -32,9 +37,9 @@ section.depoimentos .cliente:nth-child(3) {
   padding-right: 200px;
 }
 
-section.depoimentos .cliente:nth-child(2) {
+section.depoimentos .cliente:nth-child(2),
+section.depoimentos .cliente:nth-child(4) {
   padding-left: 200px;
-  margin: 100px 0px;
 }
 
 section.depoimentos .cliente .quadro {
@@ -110,6 +115,12 @@ section.depoimentos .cliente:nth-child(3) img {
   border-right: 3px solid var(--cor-branco);
 }
 
+section.depoimentos .cliente:nth-child(4) img {
+  left: 75px;
+  padding-left: 10px;
+  border-left: 3px solid var(--cor-branco);
+}
+
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
@@ -120,7 +131,8 @@ section.depoimentos .cliente:nth-child(3) img {
   section.depoimentos .cliente:nth-child(3) {
     padding-right: 30px;
   }
-  section.depoimentos .cliente:nth-child(2) {
+  section.depoimentos .cliente:nth-child(2),
+  section.depoimentos .cliente:nth-child(4) {
     padding-left: 30px;
   }
   section.depoimentos .cliente img {
@@ -141,5 +153,10 @@ section.depoimentos .cliente:nth-child(3) img {
     right: 0px;
     top: -45px;
     padding-right: 10px;
+  }
+  section.depoimentos .cliente:nth-child(4) img {
+    left: 0px;
+    top: -45px;
+    padding-left: 10px;
   }
 }

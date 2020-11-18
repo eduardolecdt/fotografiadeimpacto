@@ -61,11 +61,13 @@ section.preco .quadro h3 {
   font-family: var(--fonte-estilo);
   font-size: 3rem;
   color: var(--cor-branco);
+  cursor: default;
 }
 
 section.preco .quadro h2 {
   font-family: var(--fonte-extrabold);
   font-size: 1.5rem;
+  cursor: default;
 }
 
 section.preco .quadro h2 span {
@@ -78,6 +80,7 @@ section.preco .quadro h4 {
   font-size: 0.8rem;
   text-decoration: underline;
   padding-top: 0px;
+  cursor: default;
 }
 
 section.preco .quadro p {
@@ -86,6 +89,7 @@ section.preco .quadro p {
   line-height: 1.5;
   padding-top: 20px;
   width: 100%;
+  cursor: default;
 }
 
 section.preco .quadro button {
@@ -114,13 +118,11 @@ section.preco .quadro.branco button {
 }
 
 section.preco .quadro.preto button:hover {
-  border-top: 3px solid var(--cor-branco);
   background-color: var(--cor-preto);
   color: var(--cor-branco);
 }
 
 section.preco .quadro.branco button:hover {
-  border-top: 3px solid var(--cor-preto);
   background-color: var(--cor-branco);
   color: var(--cor-preto);
 }

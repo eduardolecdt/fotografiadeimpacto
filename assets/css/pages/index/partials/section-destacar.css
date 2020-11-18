@@ -9,9 +9,12 @@ section.destacar {
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 300px;
-  min-height: 300px;
   border-radius: 20px 0px 20px 0px;
+  background-image: url('../../../../images/pages/index/background-foto-1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 50px;
 }
 
 /* Titulo */
@@ -22,15 +25,7 @@ section.destacar .titulo {
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  height: 300px;
-  min-height: 300px;
   cursor: default;
-  position: absolute;
-  z-index: 2;
-  padding: 50px;
-  pointer-events: none;
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0, 0));
-  border-radius: 20px 0px 20px 0px;
 }
 
 section.destacar .titulo h3 {
@@ -44,66 +39,16 @@ section.destacar .titulo h2 {
   font-family: var(--fonte-extrabold);
   color: var(--cor-branco);
   font-size: 1.3rem;
-  line-height: 1.3;
-  max-width: 700px;
+  line-height: 1.5;
+  max-width: 500px;
   padding: 20px 0px 0px 0px;
-}
-
-/* Imagem */
-
-section.destacar .background {
-  width: 100%;
-  height: 100%;
-  background-position: bottom right;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 300px;
-  min-height: 300px;
-  position: absolute;
-  transition: 0.5s !important;
-  border-radius: 20px 0px 20px 0px;
-}
-
-section.destacar .background.desfocado {
-  background-image: url('../../../../images/pages/index/background-desfocado-1.png');
-}
-
-section.destacar .background.focado {
-  background-image: url('../../../../images/pages/index/background-focado-1.png');
-  opacity: 0.2;
-  pointer-events: none;
-  z-index: 1;
-  animation: desfoque 5s linear infinite;
-}
-
-@keyframes desfoque {
-  0% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0.2;
-  }
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
   section.destacar {
-    height: 350px;
-    min-height: 350px;
-  }
-  section.destacar .background {
-    height: 350px;
-    min-height: 350px;
-  }
-  section.destacar .titulo {
-    padding: 30px;
-    height: 350px;
-    min-height: 350px;
+    padding: 100px 30px;
   }
   section.destacar .titulo h3 {
     font-size: 2rem;

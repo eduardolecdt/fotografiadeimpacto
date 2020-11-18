@@ -53,8 +53,8 @@ section.galeria .slide .itens {
   overflow: hidden;
   width: 100%;
   scrollbar-width: none;
-  min-height: 380px;
-  height: 380px;
+  min-height: 324px;
+  height: 324px;
 }
 
 section.galeria .slide .itens .conteudo {
@@ -62,7 +62,7 @@ section.galeria .slide .itens .conteudo {
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  transition: 1s !important;
+  transition: 0.5s !important;
 }
 
 section.galeria .slide .itens::-webkit-scrollbar {
@@ -86,6 +86,7 @@ section.galeria .slide .itens .imagem img {
   max-width: 384px;
   min-height: 216px;
   max-height: 216px;
+  transition: 0.5s !important;
 }
 
 section.galeria .slide .itens .imagem img.fixa {
@@ -97,7 +98,6 @@ section.galeria .slide .itens .imagem img.zoom.mostrar {
   opacity: 1;
   visibility: visible;
   z-index: 1;
-  transform: rotate(5deg);
 }
 
 section.galeria .slide .itens .imagem img.zoom {
@@ -109,7 +109,7 @@ section.galeria .slide .itens .imagem img.zoom {
   visibility: hidden;
   pointer-events: none;
   position: absolute;
-  border-radius: 20px 0px 20px 0px;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.7);
 }
 
 /* Responsivo */

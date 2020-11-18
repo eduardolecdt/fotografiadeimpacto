@@ -27,22 +27,17 @@ header .titulo {
   padding: 0px 50px 0px 0px;
 }
 
-header .titulo h3 {
-  font-family: var(--fonte-estilo);
-  color: var(--cor-branco);
-  font-size: 3rem;
-  line-height: 1;
-  max-width: 450px;
-  cursor: default;
+header .titulo img {
+  width: 100%;
+  max-width: 250px;
 }
 
 header .titulo h2 {
-  font-family: var(--fonte-black);
+  font-family: var(--fonte-medium);
   color: var(--cor-branco);
   font-size: 2rem;
-  line-height: 1;
-  max-width: 650px;
-  text-transform: uppercase;
+  line-height: 1.2;
+  max-width: 500px;
   padding: 20px 0px 30px 0px;
   cursor: default;
 }
