@@ -97,7 +97,7 @@ section.galeria .slide .itens .imagem img.zoom.mostrar {
   z-index: 1;
   opacity: 1;
   visibility: visible;
-  z-index: 1;
+  pointer-events: all;
 }
 
 section.galeria .slide .itens .imagem img.zoom {
@@ -107,8 +107,8 @@ section.galeria .slide .itens .imagem img.zoom {
   max-height: 324px;
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
   position: absolute;
+  pointer-events: none;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.7);
 }
 

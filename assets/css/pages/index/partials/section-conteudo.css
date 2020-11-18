@@ -10,10 +10,6 @@ section.conteudo {
   align-items: center;
   justify-content: center;
   padding: 100px 30px;
-  background-image: url('../../../../images/pages/index/background-2.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left bottom;
 }
 
 /* Cima */

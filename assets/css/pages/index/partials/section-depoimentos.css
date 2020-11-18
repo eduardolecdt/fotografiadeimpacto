@@ -10,10 +10,6 @@ section.depoimentos {
   align-items: center;
   justify-content: center;
   padding: 150px 30px 100px 30px;
-  background-image: url('../../../../images/pages/index/background-3.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top left;
 }
 
 /* Cliente */
