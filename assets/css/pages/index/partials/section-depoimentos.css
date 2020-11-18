@@ -1,0 +1,145 @@
+/*
+
+INDEX partials SECTION DEPOIMENTOS
+
+*/
+
+section.depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 30px 100px 30px;
+  background-image: url('../../../../images/pages/index/background-3.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+/* Cliente */
+
+section.depoimentos .cliente {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+}
+
+section.depoimentos .cliente:nth-child(1),
+section.depoimentos .cliente:nth-child(3) {
+  padding-right: 200px;
+}
+
+section.depoimentos .cliente:nth-child(2) {
+  padding-left: 200px;
+  margin: 100px 0px;
+}
+
+section.depoimentos .cliente .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 100px 50px;
+  border: 3px solid var(--cor-branco);
+  cursor: default;
+  border-radius: 20px 0px 20px 0px;
+}
+
+section.depoimentos .cliente:active .quadro {
+  background-color: var(--cor-branco);
+}
+
+section.depoimentos .cliente:active .quadro h2 {
+  color: var(--cor-preto);
+}
+
+section.depoimentos .cliente:active .quadro h3 {
+  color: var(--cor-preto);
+}
+
+section.depoimentos .cliente:active .quadro p {
+  color: var(--cor-preto);
+}
+
+section.depoimentos .cliente .quadro h2 {
+  font-family: var(--fonte-estilo);
+  font-size: 2rem;
+  color: var(--cor-branco);
+}
+
+section.depoimentos .cliente .quadro h3 {
+  font-family: var(--fonte-extrabold);
+  font-size: 2rem;
+  color: var(--cor-branco);
+}
+
+section.depoimentos .cliente .quadro p {
+  font-family: var(--fonte-medium);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-top: 10px;
+  color: var(--cor-branco);
+}
+
+section.depoimentos .cliente img {
+  position: absolute;
+  width: 160px;
+  height: 150px;
+  top: 30px;
+}
+
+section.depoimentos .cliente:nth-child(1) img {
+  right: 75px;
+  padding-right: 10px;
+  border-right: 3px solid var(--cor-branco);
+}
+
+section.depoimentos .cliente:nth-child(2) img {
+  left: 75px;
+  padding-left: 10px;
+  border-left: 3px solid var(--cor-branco);
+}
+
+section.depoimentos .cliente:nth-child(3) img {
+  right: 75px;
+  padding-right: 10px;
+  border-right: 3px solid var(--cor-branco);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.depoimentos .cliente .quadro {
+    padding: 80px 20px;
+  }
+  section.depoimentos .cliente:nth-child(1),
+  section.depoimentos .cliente:nth-child(3) {
+    padding-right: 30px;
+  }
+  section.depoimentos .cliente:nth-child(2) {
+    padding-left: 30px;
+  }
+  section.depoimentos .cliente img {
+    width: 100px;
+    height: 90px;
+  }
+  section.depoimentos .cliente:nth-child(1) img {
+    right: 0px;
+    top: -45px;
+    padding-right: 10px;
+  }
+  section.depoimentos .cliente:nth-child(2) img {
+    left: 0px;
+    top: -45px;
+    padding-left: 10px;
+  }
+  section.depoimentos .cliente:nth-child(3) img {
+    right: 0px;
+    top: -45px;
+    padding-right: 10px;
+  }
+}

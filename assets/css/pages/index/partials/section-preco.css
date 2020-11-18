@@ -1,0 +1,143 @@
+/*
+
+INDEX partials SECTION PRECO
+
+*/
+
+section.preco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 50px;
+  background-image: url('../../../../images/pages/index/background-preco-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Quadro */
+
+section.preco .quadros {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+}
+
+section.preco .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 40px 30px 100px 30px;
+  height: auto;
+  width: 100%;
+  position: relative;
+  border-radius: 20px 0px 20px 0px;
+}
+
+section.preco .quadro.preto {
+  border: 3px solid var(--cor-branco);
+  background-color: var(--cor-preto);
+  color: var(--cor-branco);
+}
+
+section.preco .quadro.branco {
+  background-color: var(--cor-branco);
+  color: var(--cor-preto);
+  box-shadow: 10px 10px 30px 0px rgb(0, 0, 0, 0.2);
+}
+
+section.preco .quadro:nth-child(2) {
+  margin: 0px 30px;
+}
+
+section.preco .quadro h3 {
+  position: absolute;
+  top: -70px;
+  left: 10px;
+  font-family: var(--fonte-estilo);
+  font-size: 3rem;
+  color: var(--cor-branco);
+}
+
+section.preco .quadro h2 {
+  font-family: var(--fonte-extrabold);
+  font-size: 1.5rem;
+}
+
+section.preco .quadro h2 span {
+  font-size: 3rem;
+  padding-left: 5px;
+}
+
+section.preco .quadro h4 {
+  font-family: var(--fonte-extrabold);
+  font-size: 0.8rem;
+  text-decoration: underline;
+  padding-top: 0px;
+}
+
+section.preco .quadro p {
+  font-family: var(--fonte-medium);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-top: 20px;
+  width: 100%;
+}
+
+section.preco .quadro button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: var(--fonte-extrabold);
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 15px 0px;
+}
+
+section.preco .quadro.preto button {
+  border: 3px solid var(--cor-preto);
+  background-color: var(--cor-branco);
+  color: var(--cor-preto);
+  border-radius: 0px 0px 18px 0px;
+}
+
+section.preco .quadro.branco button {
+  border: 3px solid var(--cor-branco);
+  background-color: var(--cor-preto);
+  color: var(--cor-branco);
+  transform: scale(1.1);
+  border-radius: 20px 0px 20px 0px;
+}
+
+section.preco .quadro.preto button:hover {
+  border-top: 3px solid var(--cor-branco);
+  background-color: var(--cor-preto);
+  color: var(--cor-branco);
+}
+
+section.preco .quadro.branco button:hover {
+  border-top: 3px solid var(--cor-preto);
+  background-color: var(--cor-branco);
+  color: var(--cor-preto);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.preco {
+    padding: 100px 45px;
+    background-image: none;
+  }
+  section.preco .quadros {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+  }
+  section.preco .quadro:nth-child(2) {
+    margin: 150px 0px;
+  }
+}

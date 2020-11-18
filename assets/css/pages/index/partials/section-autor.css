@@ -9,22 +9,28 @@ section.autor {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 150px 30px;
+  padding: 100px 30px 200px 30px;
+  background-image: url('../../../../images/pages/index/background-4.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
 }
 
 /* Quadro */
 
 section.autor .quadro {
   padding: 80px 30px;
-  border: 5px solid var(--cor-branco);
+  border: 3px solid var(--cor-branco);
   width: 100%;
   max-width: 900px;
   position: relative;
+  background-color: var(--cor-preto);
   background-image: url('../../../../images/pages/index/imagem-autor.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
   cursor: default;
+  border-radius: 20px 0px 20px 0px;
 }
 
 section.autor .quadro h3 {
@@ -45,7 +51,7 @@ section.autor .quadro h2.menor {
 }
 
 section.autor .quadro p {
-  font-family: var(--fonte-extrabold);
+  font-family: var(--fonte-medium);
   font-size: 0.9rem;
   line-height: 1.5;
   color: var(--cor-branco);
@@ -61,19 +67,20 @@ section.autor .quadro p.preto {
 
 section.autor .quadro .info {
   position: absolute;
-  bottom: -100px;
+  bottom: -120px;
   left: 100px;
   max-width: 400px;
   background-color: var(--cor-branco);
-  border: 5px solid var(--cor-branco);
+  border: 3px solid var(--cor-branco);
   padding: 30px;
+  border-radius: 20px 0px 20px 0px;
 }
 
-section.autor .quadro .info:hover {
+section.autor .quadro .info:active {
   background-color: var(--cor-preto);
 }
 
-section.autor .quadro .info:hover p.preto {
+section.autor .quadro .info:active p.preto {
   color: var(--cor-branco);
 }
 
@@ -86,8 +93,8 @@ section.autor .quadro .info:hover p.preto {
     background-position: bottom center;
   }
   section.autor .quadro .info {
-    bottom: -100px;
-    left: -30px;
+    bottom: -130px;
+    left: -33px;
     max-width: 280px;
     padding: 15px;
   }

@@ -45,6 +45,7 @@ nav .opcoes a.destaque {
   color: var(--cor-preto);
   background-color: var(--cor-branco);
   padding: 5px 15px;
+  border-radius: 10px 0px 10px 0px;
 }
 
 nav .opcoes a:hover {

@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+<!--
+
+Design and Front by @eduardolecdt
+
+-->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,7 +84,7 @@
   <link rel="shortcut icon" href="./docs/favicon.ico">
 
   <!-- CSS imports -->
-  <link href="./assets/css/pages/index/index.css?v=0.1" rel="stylesheet">
+  <link href="./assets/css/pages/index/index.css?v=0.3" rel="stylesheet">
 
 </head>
 <body class="carregando">
@@ -96,9 +103,7 @@
   <nav>
     <img class="logo" src="./assets/images/pages/index/fdi-icone.svg">
     <div class="opcoes">
-      <a target="_blank" href="">O Mentor</a>
-      <a target="_blank" href="">Como Funciona</a>
-      <a class="destaque" target="_blank" href="">Entrar</a>
+      <a class="destaque" target="_blank" href="">Já sou Aluno</a>
     </div>
   </nav>
 
@@ -110,7 +115,7 @@
     <div class="titulo">
       <h3>Fotografia de Impacto</h3>
       <h2>Não é apenas sobre fotografia. É sobre descobrir o verdadeiro artista que há em você!</h2>
-      <a><button>Assinar Agora</button></a>
+      <a href="#preco"><button>Assinar Agora</button></a>
     </div>
   </header>
 
@@ -120,29 +125,8 @@
       <h3>Sua Comunidade</h3>
       <h2>Somos uma comunidade com tudo o que você precisa aprender para se destacar com a sua fotografia por apenas R$ 49,90 por mês.</h2>
     </div>
-    <div class="slide">
-      <img class="seta voltar" src="./assets/images/pages/index/seta-voltar.svg">
-      <img class="seta avancar" src="./assets/images/pages/index/seta-avancar.svg">
-      <div class="itens">
-        <div class="conteudo">
-          <img data-src="./assets/images/pages/index/slide-1.png">
-          <img data-src="./assets/images/pages/index/slide-2.png">
-          <img data-src="./assets/images/pages/index/slide-3.png">
-          <img data-src="./assets/images/pages/index/slide-4.png">
-          <img data-src="./assets/images/pages/index/slide-5.png">
-          <img data-src="./assets/images/pages/index/slide-6.png">
-          <img data-src="./assets/images/pages/index/slide-7.png">
-          <img data-src="./assets/images/pages/index/slide-8.png">
-          <img data-src="./assets/images/pages/index/slide-9.png">
-          <img data-src="./assets/images/pages/index/slide-10.png">
-          <img data-src="./assets/images/pages/index/slide-11.png">
-          <img data-src="./assets/images/pages/index/slide-12.png">
-          <img data-src="./assets/images/pages/index/slide-13.png">
-          <img data-src="./assets/images/pages/index/slide-14.png">
-          <img data-src="./assets/images/pages/index/slide-15.png">
-        </div>
-      </div>
-    </div>
+    <div class="background focado"></div>
+    <div class="background desfocado"></div>
   </section>
 
   <!-- section CONTEUDO -->
@@ -181,29 +165,8 @@
       <h3>Aulas Novas Toda Semana</h3>
       <h2>Você terá acesso a conteúdos exclusivos com uma aula nova toda semana diversificando entre aulas práticas, entrevistas com referências internacionais, conteúdos teóricos, análises de fotos e hotseat para dúvidas e perguntas diretamente com Anderson Marques.</h2>
     </div>
-    <div class="slide">
-      <img class="seta voltar" src="./assets/images/pages/index/seta-voltar.svg">
-      <img class="seta avancar" src="./assets/images/pages/index/seta-avancar.svg">
-      <div class="itens">
-        <div class="conteudo">
-          <img data-src="./assets/images/pages/index/slide-2-1.png">
-          <img data-src="./assets/images/pages/index/slide-2-2.png">
-          <img data-src="./assets/images/pages/index/slide-2-3.png">
-          <img data-src="./assets/images/pages/index/slide-2-4.png">
-          <img data-src="./assets/images/pages/index/slide-2-5.png">
-          <img data-src="./assets/images/pages/index/slide-2-6.png">
-          <img data-src="./assets/images/pages/index/slide-2-7.png">
-          <img data-src="./assets/images/pages/index/slide-2-8.png">
-          <img data-src="./assets/images/pages/index/slide-2-9.png">
-          <img data-src="./assets/images/pages/index/slide-2-10.png">
-          <img data-src="./assets/images/pages/index/slide-2-11.png">
-          <img data-src="./assets/images/pages/index/slide-2-12.png">
-          <img data-src="./assets/images/pages/index/slide-2-13.png">
-          <img data-src="./assets/images/pages/index/slide-2-14.png">
-          <img data-src="./assets/images/pages/index/slide-2-15.png">
-        </div>
-      </div>
-    </div>
+    <div class="background focado"></div>
+    <div class="background desfocado"></div>
   </section>
 
   <!-- section AUTOR -->
@@ -219,21 +182,160 @@
     </div>
   </section>
 
+  <!-- section GARANTIA -->
+  <section class="garantia">
+    <div class="titulo">
+      <h3>Garantia de 7 dias</h3>
+      <h2>Acesse o melhor conteúdo para profissionais que buscam fotografias que impactam e caso não goste de algo dentro de 7 dias, você pode pedir 100% do dinheiro investido.</h2>
+    </div>
+    <div class="background focado"></div>
+    <div class="background desfocado"></div>
+  </section>
+
+  <!-- section DEPOIMENTOS -->
+  <section class="depoimentos">
+    <div class="cliente">
+      <div class="quadro">
+        <h2>Marcos</h2>
+        <h3>OLIVER</h3>
+        <p>Esse grande mestre nos ajudou a solucionar vários problemas que estávamos passando, conseguimos absorver muito conteúdo que nos proporcionou um atalho para que nosso trabalho se destacasse na nossa região e também em concursos de fotografia!</p>
+      </div>
+      <img data-src="./assets/images/pages/index/depoimento-marcosoliver.png">
+    </div>
+    <div class="cliente">
+      <div class="quadro">
+        <h2>Tatiana</h2>
+        <h3>ANTONUCCI</h3>
+        <p>A experiência e a simplicidade do Anderson em passar o que sabe fez com que seja algo ainda mais enriquecedor do que eu esperava. O olhar de alguém tão experiente com certeza te faz ver diferente, soma demais! Só tenho a agradecer.</p>
+      </div>
+      <img data-src="./assets/images/pages/index/depoimento-tatianaantonucci.png">
+    </div>
+    <div class="cliente">
+      <div class="quadro">
+        <h2>Wagner</h2>
+        <h3>OLIVEIRA</h3>
+        <p>Já fiz vários WS, de fotógrafos que eu admiro do Brasil inteiro. Mas chega um momento onde você precisa de uma referência única, quando você já tem uma identidade na sua fotografia. Em meio a tanta gente talentosa eu escolhi o Anderson, porque na minha opinião é o fotógrafo brasileiro que tem uma leitura única nas suas fotos.</p>
+      </div>
+      <img data-src="./assets/images/pages/index/depoimento-wagneroliveira.png">
+    </div>
+  </section>
+
+  <!-- section GALERIA -->
+  <section class="galeria">
+    <div class="slide">
+      <img class="seta voltar" src="./assets/images/pages/index/seta-voltar.svg">
+      <img class="seta avancar" src="./assets/images/pages/index/seta-avancar.svg">
+      <div class="itens">
+        <div class="conteudo">
+          <div class="imagem">
+            <img class="zoom um" data-src="./assets/images/pages/index/galeria/slide-1.png">
+            <img class="fixa um" data-src="./assets/images/pages/index/galeria/slide-1.png">
+          </div>
+          <div class="imagem">
+            <img class="zoom dois" data-src="./assets/images/pages/index/galeria/slide-2.png">
+            <img class="fixa dois" data-src="./assets/images/pages/index/galeria/slide-2.png">
+          </div>
+          <div class="imagem">
+            <img class="zoom tres" data-src="./assets/images/pages/index/galeria/slide-3.png">
+            <img class="fixa tres" data-src="./assets/images/pages/index/galeria/slide-3.png">
+          </div>
+          <div class="imagem">
+            <img class="zoom quatro" data-src="./assets/images/pages/index/galeria/slide-4.png">
+            <img class="fixa quatro" data-src="./assets/images/pages/index/galeria/slide-4.png">
+          </div>
+          <div class="imagem">
+            <img class="zoom cinco" data-src="./assets/images/pages/index/galeria/slide-5.png">
+            <img class="fixa cinco" data-src="./assets/images/pages/index/galeria/slide-5.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section PRECO -->
+  <section class="preco" id="preco">
+    <div class="quadros">
+      <div class="quadro preto">
+        <h3>Grátis</h3>
+        <h2>R$<span>0</span>,00</h2>
+        <p>Acesso por 7 dias</p>
+        <p>Assista a todas as aulas desde o início</p>
+        <a><button>Testar Grátis</button></a>
+      </div>
+      <div class="quadro preto">
+        <h3>Mensal</h3>
+        <h2>R$<span>49</span>,90</h2>
+        <h4>Para os primeiros 100 alunos</h4>
+        <p>Acesso por 1 mês</p>
+        <p>Assista a todas as aulas desde o início</p>
+        <p>Acesso a nosso grupo fechado</p>
+        <p>Participe das aulas ao vivo</p>
+        <a><button>Assinar Mensal</button></a>
+      </div>
+      <div class="quadro branco">
+        <h3>Anual</h3>
+        <h2>R$<span>490</span>,00</h2>
+        <h4>Para os primeiros 100 alunos</h4>
+        <p>Acesso por 1 ano</p>
+        <p>Assista a todas as aulas desde o início</p>
+        <p>Acesso a nosso grupo fechado</p>
+        <p>Participe das aulas ao vivo</p>
+        <p>R$ 300 em 3 vouchers de R$ 100 da encadernadora profox</p>
+        <p>Desconto nas empresas smartalbum, redstrap, amadeirar e jpegmini</p>
+        <a><button>Assinar Anual</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section PERGUNTAS -->
+  <section class="perguntas">
+    <div class="slide">
+      <img class="seta subir" src="./assets/images/pages/index/seta-subir.svg">
+      <img class="seta descer" src="./assets/images/pages/index/seta-descer.svg">
+      <div class="itens">
+        <div class="conteudo">
+          <div class="pergunta">
+            <h2>Como <span>Assistir</span> as aulas?</h2>
+            <p>Você terá acesso a todas as aulas dentro da plataforma para ver e rever quando quiser no seu tempo, sem pressa e sem a obrigação de estar ao vivo em determinado horário.</p>
+            <p>O conteúdo fica disponível na nossa plataforma e poderá acessar em qualquer dispositivo que tenha conexão com internet.</p>
+          </div>
+          <div class="pergunta">
+            <h2>Teste de <span>7 dias</span> grátis</h2>
+            <p>Para fazer o teste de 7 dias você deve assinar A COMUNIDADE FOTOGRAFIA DE IMPACTO por meio de cartão de crédito, selecionar a opção de 7 dias grátis e então, antes de vencer o prazo de 7 dias, realizar o cancelamento da assinatura caso não queira continuar.</p>
+          </div>
+          <div class="pergunta">
+            <h2>Zero <span>Fidelidade</span></h2>
+            <p>Se você optar pela assinatura no modelo de mensalidade poderá cancelar na hora que quiser, não exigimos fidelidade.</p>
+          </div>
+          <div class="pergunta">
+            <h2>Acesso <span>Exclusivo</span> ao grupo</h2>
+            <p>No facebook temos um grupo exclusivo para interação, debate de ideias, informativos e análises de fotos. Enviamos o link de acesso ao grupo no e-mail de boas-vindas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background focado"></div>
+    <div class="background desfocado"></div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
+    <p>FDI - Fotografia de Impacto</p>
+    <p>Todos os Direitos Reservados</p>
   </footer>
 
   <!-- JS global -->
-  <script src="./assets/js/global/dragdrop.js?v=0.1"></script>
-  <script src="./assets/js/global/loading.js?v=0.1"></script>
-  <script src="./assets/js/global/lazy-loading.js?v=0.1"></script>
+  <script src="./assets/js/global/dragdrop.js?v=0.2"></script>
+  <script src="./assets/js/global/loading.js?v=0.2"></script>
+  <script src="./assets/js/global/lazy-loading.js?v=0.2"></script>
 
   <!-- JS local
   <script src="./assets/js/pages/index/links.js?v=0.1"></script>-->
-  <script src="./assets/js/pages/index/google-tag.js?v=0.1"></script>
-  <script src="./assets/js/pages/index/pixel-facebook.js?v=0.1"></script>
-  <script src="./assets/js/pages/index/slide-destacar.js?v=0.2"></script>
-  <script src="./assets/js/pages/index/slide-aulas.js?v=0.1"></script>
+  <script src="./assets/js/pages/index/google-tag.js?v=0.2"></script>
+  <script src="./assets/js/pages/index/pixel-facebook.js?v=0.2"></script>
+  <script src="./assets/js/pages/index/slide-galeria.js?v=0.2"></script>
+  <script src="./assets/js/pages/index/slide-galeria-hover.js?v=0.2"></script>
+  <script src="./assets/js/pages/index/slide-perguntas.js?v=0.2"></script>
 
 </body>
 </html>

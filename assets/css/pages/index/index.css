@@ -18,4 +18,9 @@ INDEX
 @import './partials/section-conteudo.css';
 @import './partials/section-aulas.css';
 @import './partials/section-autor.css';
+@import './partials/section-garantia.css';
+@import './partials/section-depoimentos.css';
+@import './partials/section-galeria.css';
+@import './partials/section-preco.css';
+@import './partials/section-perguntas.css';
 

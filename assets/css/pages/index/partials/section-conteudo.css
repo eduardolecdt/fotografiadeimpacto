@@ -9,7 +9,7 @@ section.conteudo {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 150px 30px;
+  padding: 100px 30px;
   background-image: url('../../../../images/pages/index/background-2.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -38,10 +38,11 @@ section.conteudo .baixo {
   width: 100%;
   max-width: 900px;
   background-color: var(--cor-branco);
-  border: 5px solid var(--cor-branco);
+  border: 3px solid var(--cor-branco);
   margin-top: 30px;
   padding: 30px;
   cursor: default;
+  border-radius: 20px 0px 20px 0px;
 }
 
 /* Textos */
@@ -56,13 +57,18 @@ section.conteudo h2.branco {
   color: var(--cor-branco);
 }
 
+section.conteudo h2.branco span {
+  color: var(--cor-branco);
+}
+
 section.conteudo h2 span {
   font-family: var(--fonte-estilo);
   font-size: 2rem;
+  color: var(--cor-preto);
 }
 
 section.conteudo p {
-  font-family: var(--fonte-extrabold);
+  font-family: var(--fonte-medium);
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -80,11 +86,12 @@ section.conteudo .cima .quadros.dois {
   justify-content: center;
   text-align: left;
   background-color: transparent;
-  border: 5px solid var(--cor-branco);
+  border: 3px solid var(--cor-branco);
   height: 600px;
   margin-left: 30px;
   padding: 30px;
   width: 50%;
+  border-radius: 20px 0px 20px 0px;
 }
 
 section.conteudo .cima .quadros.um {
@@ -104,19 +111,11 @@ section.conteudo .cima .quadros.um .quadro.um {
   justify-content: center;
   text-align: left;
   background-color: var(--cor-branco);
-  border: 5px solid var(--cor-branco);
+  border: 3px solid var(--cor-branco);
   height: 230px;
   margin-bottom: 30px;
   padding: 30px;
-}
-
-section.conteudo .cima .quadros.um .quadro.um:hover {
-  background-color: transparent;
-}
-
-section.conteudo .cima .quadros.um .quadro.um:hover h2,
-section.conteudo .cima .quadros.um .quadro.um:hover p {
-  color: var(--cor-branco);
+  border-radius: 20px 0px 20px 0px;
 }
 
 section.conteudo .cima .quadros.um .quadro.dois {
@@ -131,15 +130,54 @@ section.conteudo .cima .quadros.um .quadro.dois div {
   align-items: flex-start;
   justify-content: center;
   text-align: left;
-  background-color: var(--cor-branco);
-  border: 5px solid var(--cor-branco);
   height: 350px;
   padding: 30px;
+  border-radius: 20px 0px 20px 0px;
+}
+
+section.conteudo .cima .quadros.um .quadro.dois div:nth-child(1) {
+  background-color: var(--cor-branco);
+  border: 3px solid var(--cor-branco);
 }
 
 section.conteudo .cima .quadros.um .quadro.dois div:nth-child(2) {
   margin-left: 30px;
   background-color: transparent;
+  border: 3px solid var(--cor-branco);
+}
+
+/* active */
+
+section.conteudo .cima .quadros.um .quadro.um:active,
+section.conteudo .cima .quadros.um .quadro.dois div:nth-child(1):active,
+section.conteudo .baixo:active {
+  background-color: transparent;
+}
+
+section.conteudo .cima .quadros.dois:active,
+section.conteudo .cima .quadros.um .quadro.dois div:nth-child(2):active {
+  background-color: var(--cor-branco);
+}
+
+section.conteudo .cima .quadros.um .quadro.um:active h2,
+section.conteudo .cima .quadros.um .quadro.um:active h2 span,
+section.conteudo .cima .quadros.um .quadro.um:active p,
+section.conteudo .cima .quadros.um .quadro.dois div:nth-child(1):active h2,
+section.conteudo .cima .quadros.um .quadro.dois div:nth-child(1):active h2 span,
+section.conteudo .cima .quadros.um .quadro.dois div:nth-child(1):active p,
+section.conteudo .baixo:active h2,
+section.conteudo .baixo:active h2 span,
+section.conteudo .baixo:active p {
+  color: var(--cor-branco);
+}
+
+section.conteudo .cima .quadros.dois:active h2,
+section.conteudo .cima .quadros.um .quadro.dois div:nth-child(2):active h2,
+section.conteudo .cima .quadros.dois:active p,
+section.conteudo .cima .quadros.um .quadro.dois div:nth-child(2):active p,
+section.conteudo .cima .quadros.dois:active h2 span,
+section.conteudo .cima .quadros.um .quadro.dois div:nth-child(2):active h2 span {
+  color: var(--cor-preto);
 }
 
 /* Responsivo */

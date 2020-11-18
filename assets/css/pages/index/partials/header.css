@@ -54,6 +54,7 @@ header .titulo button {
   border: 3px solid var(--cor-branco);
   font-size: 1.1rem;
   padding: 10px 20px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 header .titulo button:hover {

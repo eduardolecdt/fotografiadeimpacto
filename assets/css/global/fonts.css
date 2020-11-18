@@ -5,11 +5,11 @@ FONTES
 */
 
 @font-face {
-  font-family: 'poppins_regular';
+  font-family: 'poppins_medium';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('../../fonts/poppins-regular.woff') format('woff');
+  src: url('../../fonts/poppins-medium.woff') format('woff');
 }
 
 @font-face {
