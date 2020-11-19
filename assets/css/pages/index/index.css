@@ -8,7 +8,6 @@ INDEX
 
 /* Partials */
 
-@import './partials/body.css';
 @import './partials/nav.css';
 @import './partials/loading.css';
 @import './partials/footer.css';

@@ -64,6 +64,12 @@ section.preco .quadro h3 {
   cursor: default;
 }
 
+section.preco .quadro:nth-child(1) h3,
+section.preco .quadro:nth-child(2) h3 {
+  font-family: var(--fonte-extrabold);
+  font-size: 2.5rem;
+}
+
 section.preco .quadro h2 {
   font-family: var(--fonte-extrabold);
   font-size: 1.5rem;

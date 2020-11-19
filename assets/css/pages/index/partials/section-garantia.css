@@ -29,10 +29,15 @@ section.garantia .titulo {
 }
 
 section.garantia .titulo h3 {
-  font-family: var(--fonte-estilo);
+  font-family: var(--fonte-extrabold);
   color: var(--cor-branco);
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
+}
+
+section.garantia .titulo h3 span {
+  font-family: var(--fonte-estilo);
+  font-size: 3rem;
 }
 
 section.garantia .titulo h2 {
