@@ -10,14 +10,6 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 </IfModule>
 
-<filesMatch "\.(js|css|png)$">
-FileETag None
-Header unset ETag
-Header set Cache-Control "max-age=2595000, no-cache, no-store, must-revalidate"
-Header set Pragma "no-cache"
-Header set Expires "Wed, 10 Nov 2020 23:59:00 GMT"
-</filesMatch>
-
 # Gzip compression
 <IfModule mod_deflate.c>
 # Active compression
