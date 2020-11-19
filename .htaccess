@@ -12,17 +12,17 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 <IfModule mod_headers.c>
 	Header unset ETag
-	<filesMatch "\.(ico|jpe?g|png|gif|swf)$">
+	<filesMatch "\.(png)$">
 		Header set Cache-Control "max-age=2595000, public"
 	</filesMatch>
 	<filesMatch "\.(css)$">
-		Header set Cache-Control "max-age=0, public"
+		Header unset Cache-Control "max-age=0, public"
 	</filesMatch>
 	<filesMatch "\.(js)$">
-		Header set Cache-Control "max-age=0, private"
+		Header unset Cache-Control "max-age=0, public"
 	</filesMatch>
 	<filesMatch "\.(x?html?|php)$">
-		Header set Cache-Control "max-age=0, private, must-revalidate"
+		Header unset Cache-Control "max-age=0, public, must-revalidate"
 	</filesMatch>
 </IfModule>
 
