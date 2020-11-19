@@ -10,21 +10,13 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 </IfModule>
 
-<IfModule mod_headers.c>
-	Header unset ETag
-	<filesMatch "\.(png)$">
-		Header set Cache-Control "max-age=2595000, public"
-	</filesMatch>
-	<filesMatch "\.(css)$">
-		Header unset Cache-Control "max-age=0, public"
-	</filesMatch>
-	<filesMatch "\.(js)$">
-		Header unset Cache-Control "max-age=0, public"
-	</filesMatch>
-	<filesMatch "\.(x?html?|php)$">
-		Header unset Cache-Control "max-age=0, public, must-revalidate"
-	</filesMatch>
-</IfModule>
+<filesMatch "\.(js|css|png)$">
+FileETag None
+Header unset ETag
+Header set Cache-Control "max-age=2595000, no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "Wed, 10 Nov 2020 23:59:00 GMT"
+</filesMatch>
 
 # Gzip compression
 <IfModule mod_deflate.c>
